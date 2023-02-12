@@ -17,7 +17,7 @@ document.getElementById('btn-diposit').addEventListener('click', function(){
 
     const currentBalanceTotal = previousBalanceTotal + newDepositAmount;
     balanceTotalElement.innerText = currentBalanceTotal;
-
+    console.log(balanceTotalElement);
 
     depositField.value = '';
 })
