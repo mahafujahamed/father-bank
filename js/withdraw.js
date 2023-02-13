@@ -9,6 +9,7 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
     const newWithdrawAmountString = withdrawField.value;
     const newWithdrawAmount = parseFloat(newWithdrawAmountString);
 
+    withdrawField.value = '';
     // step-3: 
     const withdrawTotalElement = document.getElementById('withdraw-total');
     const previousTotalString = withdrawTotalElement.innerText;
@@ -29,5 +30,5 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
     balanceTotalElement.innerText = neewBalanceTotal;
     
     // step-7:  
-    withdrawField.value = '';
+    
 })
